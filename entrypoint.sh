@@ -59,7 +59,7 @@ IKED_PID=$!
 echo "IKEd started."
 
 echo "Starting IKEc for $SITE..."
-$COMMAND &
+screen -dmS "ikec" $COMMAND &
 IKEC_PID=$!
 
 wait $IKED_PID
