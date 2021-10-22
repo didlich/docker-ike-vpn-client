@@ -5,7 +5,7 @@ LABEL maintainer="didlich@t-online.de"
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt -q -y update \
-  && apt -q -y install curl wget inetutils-ping openssh-server ike
+  && apt -q -y install curl wget inetutils-ping openssh-server ike screen
 
 RUN mkdir -p /var/run/sshd \
   && apt -q -y clean \
